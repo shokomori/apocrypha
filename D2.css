@@ -1,0 +1,166 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('img2/image-93-4 (1).png');
+    background-size: cover;
+    background-position: center;
+}
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+.logo {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.logo img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+.login-form {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+.login-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #fff;
+}
+.login-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #20B2AA;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover {
+    background-color: #008B74;
+}
+
+/* Adjusted margin above the "Forgot Password?" */
+.forgot-password {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.forgot-password a {
+    color: #20B2AA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.forgot-password a:hover {
+    color: #008B74;
+}
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.signup-link a {
+    color: #20B2AA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.signup-link a:hover {
+    color: #008B74;
+}
+.footer {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+.social-icons {
+    margin-bottom: 15px;
+}
+.social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 15px;
+    object-fit: contain;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.footer-links a:hover {
+    color: #20B2AA;
+}
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-form {
+        width: 90%;
+        padding: 20px;
+    }
+    .social-icons img {
+        width: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        height: 120px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .login-form input, .login-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .social-icons img {
+        width: 20px;
+    }
+}

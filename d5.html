@@ -1,0 +1,87 @@
+<!-- d5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Your Review</title>
+    <link rel="stylesheet" href="D5.css">
+    
+</head>
+<body>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    <nav class="nav-dropdown">
+        <ul>
+            <li><a href="d3.html">Home</a></li>
+            <li><a href="d5.html">Reviews</a></li>
+            <li><a href="d4.html">Profile</a></li>
+            <li><a href="d6.html">Concert</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <a href="#" class="back-arrow">◀ Back</a>
+            <h1>Write Your Review</h1>
+        </header>
+
+        <div class="date-input">
+            <span>Listened Date</span>
+            <span>  05 March 2022</span>
+            <button>Change</button>
+        </div>
+
+        <img src="img3/image-85-90.png" alt="Album Cover" class="album-cover">
+
+        <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="heart">♥</span>
+        </div>
+
+        <textarea placeholder="Write your review here..."></textarea>
+
+        <button class="publish-btn">Publish</button>
+    </div>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/shoko.masato/" target="_blank">
+                <img src="icons/1-removebg-preview-30.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/oomoorii/" target="_blank">
+                <img src="icons/2-removebg-preview-1-29.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="icons/3-removebg-preview-1-28.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="icons/4-removebg-preview-26.png" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="icons/5-removebg-preview-27.png" alt="TikTok">
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">HELP</a>
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">DISCLAIMER</a>
+        </div>
+        <div class="copyright">
+            Copyright © 2024 Apocrypha
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.nav-dropdown');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

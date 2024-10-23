@@ -1,0 +1,343 @@
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .nav-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: none;
+            border: none;
+            color: #00ffff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-dropdown {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: top 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        .nav-dropdown.active {
+            top: 0;
+        }
+
+        .nav-dropdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-dropdown ul li {
+            padding: 15px;
+        }
+
+        .nav-dropdown ul li a {
+            color: #00ffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            color: #787878;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #00cccc;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('img4/image-95-2.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block; /* Added display property */
+}
+
+.social-icons img {
+    width: 32px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle; /* Added vertical alignment */
+}
+
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid #000;
+        }
+
+        .crew-label {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .user-info {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .user-name {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .user-stats {
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .user-bio {
+            margin-bottom: 30px;
+        }
+
+        .user-bio-details {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            color: #00ffff;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .media-section {
+            padding: 0 20px;
+        }
+
+        .section-title {
+            color: #00ffff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .media-item {
+            text-align: center;
+        }
+
+        .media-cover {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .media-rating {
+            color: #00ffff;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .read-review {
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .recent-review {
+            background-color: #111;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .recent-review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .recent-review-title {
+            font-size: 24px;
+            color: #00ffff;
+        }
+
+        .recent-review-year {
+            color: #888;
+        }
+
+        .recent-review-rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .recent-review-stars {
+            color: #00ffff;
+            margin-right: 5px;
+        }
+
+        .recent-review-heart {
+            color: #ff4500;
+        }
+
+        .recent-review-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .recent-review-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .recent-review-text {
+            flex: 1;
+        }
+
+        .recent-review-user {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .recent-review-user-name {
+            margin-right: 10px;
+        }
+
+        .recent-review-user-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
+
+        .social-icons {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            color: #00ffff;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .profile-picture {
+                width: 90px;
+                height: 90px;
+                bottom: -45px;
+            }
+
+            .user-info {
+                margin-top: 60px;
+            }
+
+            .media-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .recent-review-content {
+                flex-direction: column;
+            }
+
+            .recent-review-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .crew-label {
+                font-size: 14px; /* Adjust font size for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .user-bio-details {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .recent-review-content {
+                flex-direction: column;
+                align-items: center; /* Center the review content on mobile */
+            }
+
+            .recent-review-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .crew-label {
+                font-size: 12px; /* Further adjust font size for smaller screens */
+            }
+        }
+   

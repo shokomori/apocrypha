@@ -1,0 +1,252 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img3/frank-ocean-laptop-793nzlop3ggtl7j9.jpg'); /* Add your desired background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .nav-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: none;
+            border: none;
+            color: #00ffff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-dropdown {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: top 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        .nav-dropdown.active {
+            top: 0;
+        }
+
+        .nav-dropdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-dropdown ul li {
+            padding: 15px;
+        }
+
+        .nav-dropdown ul li a {
+            color: #00ffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto; /* Added margin for better spacing */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .back-arrow {
+            font-size: 24px;
+            text-decoration: none;
+            color: #00ffff;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-arrow:hover {
+            color: #008080;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+
+        .date-input, textarea {
+            background-color: #1a1a1a;
+            border: 1px solid #00ffff;
+            border-radius: 5px;
+            padding: 15px;
+            color: #fff;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+            height: 80px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .date-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .date-input span {
+            font-size: 14px;
+            flex: 1;
+        }
+
+        .date-input button {
+            background-color: transparent;
+            border: none;
+            color: #00ffff;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .date-input button:hover {
+            color: #008080;
+        }
+
+        .album-cover {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .star, .heart {
+            font-size: 28px;
+            margin: 0 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .star {
+            color: #00ffff;
+        }
+
+        .star:hover, .heart:hover {
+            transform: scale(1.2);
+        }
+
+        .heart {
+            color: #e74c3c;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        textarea:focus {
+            border-color: #008080;
+            outline: none;
+        }
+
+        .publish-btn {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            transition: background-color 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        .publish-btn:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block; /* Added display property */
+}
+
+.social-icons img {
+    width: 32px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle; /* Added vertical alignment */
+}
+
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #00ffff;
+        }
+
+        footer p {
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .concert-date {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .concert-date {
+                font-size: 16px;
+            }
+        }

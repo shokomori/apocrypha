@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocrypha - Track Your Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Corrected the CSS link -->
+    <link rel="stylesheet" href="D1.css">
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop>
+            <source src="img/img.mp4" type="video/mp4"> <!-- Update with your video path -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <div class="logo">
+                <img src="img/apocrypha-9-9-2024-1-25.png" alt="Apocrypha Logo"> <!-- Update with your logo path -->
+            </div>
+            <p class="tagline">
+                Track the music you've listened to. Save songs you want to explore. Tell your friends what's worth hearing.
+            </p>
+            <button class="cta-button" id="getStarted">Get Started</button> <!-- Added ID for JavaScript -->
+        </div>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/shoko.masato/" target="_blank">
+                    <img src="icons/1-removebg-preview-30.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/oomoorii/" target="_blank">
+                    <img src="icons/2-removebg-preview-1-29.png" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="icons/3-removebg-preview-1-28.png" alt="Twitter">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="icons/4-removebg-preview-26.png" alt="YouTube">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="icons/5-removebg-preview-27.png" alt="TikTok">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">HELP</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">DISCLAIMER</a>
+            </div>
+            <div class="copyright">
+                Copyright © 2024 Apocrypha
+            </div>
+        </footer>
+        
+    </div>
+
+    <script>
+        document.getElementById('getStarted').addEventListener('click', function() {
+            window.location.href = "d2.html"; // Redirects to register.html when the button is clicked
+        });
+    </script>
+</body>
+</html>

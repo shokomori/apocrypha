@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocrypha - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="D2.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="img/apocrypha-9-9-2024-1-25.png" alt="Apocrypha Logo">
+            </div>
+            <div class="login-form">
+                <h2>Login</h2>
+                <p>Please sign in to continue.</p>
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Username or Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <div class="signup-link">
+                    Don't have an account? Please <a href="#">Sign Up</a> first.
+                </div>
+                <p id="error" style="color: red;"></p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/shoko.masato/" target="_blank">
+                    <img src="icons/1-removebg-preview-30.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/oomoorii/" target="_blank">
+                    <img src="icons/2-removebg-preview-1-29.png" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="icons/3-removebg-preview-1-28.png" alt="Twitter">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="icons/4-removebg-preview-26.png" alt="YouTube">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="icons/5-removebg-preview-27.png" alt="TikTok">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">HELP</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">DISCLAIMER</a>
+            </div>
+            <div class="copyright">
+                Copyright © 2024 Apocrypha
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+    
+            if (username && password) {
+                // Redirect to d3.html on successful login
+                window.location.href = "d3.html";
+            } else {
+                document.getElementById('error').textContent = "Please enter both username and password.";
+            }
+        });
+    </script>
+    
+</body>
+</html>
